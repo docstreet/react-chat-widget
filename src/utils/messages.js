@@ -5,6 +5,8 @@ import Message from '@messagesComponents/Message';
 import Snippet from '@messagesComponents/Snippet';
 import QuickButton from '@quickButtonsComponents/QuickButton';
 
+const window = require('./windowOrGlobal');
+
 export function createNewMessage(text, sender) {
   return Map({
     type: MESSAGES_TYPES.TEXT,
